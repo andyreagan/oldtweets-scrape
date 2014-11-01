@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd  /users/a/r/areagan/fun/twitter/scraping
+
+python scrape-oauth2.py
+
