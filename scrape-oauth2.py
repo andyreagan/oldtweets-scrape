@@ -4,6 +4,10 @@
 #
 # hammer the twitter API!
 
+from twython import Twython, TwythonError
+import json
+import codecs
+
 if __name__ == '__main__':
   numToGrab = 180
   
@@ -21,7 +25,7 @@ if __name__ == '__main__':
   ACCESS_TOKEN = f.readline().rstrip()
   f.close()
   
-  from twython import Twython, TwythonError
+
   
   twitter = Twython(APP_KEY,access_token=ACCESS_TOKEN)
   
@@ -30,8 +34,7 @@ if __name__ == '__main__':
   outfile = '/users/a/r/areagan/fun/twitter/scraping/data/{0}-{1}.json'.format(numCompleted,numCompleted+numToGrab-1)
   outlog = '/users/a/r/areagan/fun/twitter/scraping/log/{0}-{1}.log'.format(numCompleted,numCompleted+numToGrab-1)
   
-  import json
-  import codecs
+
   f = codecs.open(outfile,'w','utf8')
   g = open(outlog,'w')
   
@@ -55,4 +58,12 @@ if __name__ == '__main__':
   f = open('completed.txt','w')
   f.write(str(numCompleted+numToGrab)+'\n')
   f.close()
+
+
+
+
+
+
+
+
 

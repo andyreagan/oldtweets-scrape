@@ -1,6 +1,7 @@
-#!/bin/bash
+cd /users/a/r/areagan/fun/twitter/scraping
 
-cd  /users/a/r/areagan/fun/twitter/scraping
+. pyenv/bin/activate
 
 python scrape-oauth2.py
 
+deactivate
