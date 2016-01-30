@@ -4,7 +4,9 @@
 #
 # updated 5/10/13 to include minute shifting
 #
-# USAGE: python pydate.py date min hour day switch
+# USAGE: python pydate.py date min hour day month year switch[m,h,d]
+# [ example: python pydate.py 13.10.10.05.13 0 0 0 0 0 d ]
+#
 #   date: $(date +%M.%H.%d.%m.%y) e.g. 13.10.10.05.13
 #   min: minutes to subtract
 #   hour: hours to subtract
