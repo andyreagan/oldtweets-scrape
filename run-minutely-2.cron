@@ -1,0 +1,10 @@
+cd /users/a/r/areagan/fun/twitter/scraping
+
+. pyenv3/bin/activate
+
+export PBS_DEFAULT=pbs_diggs
+export MOABHOMEDIR=/opt/moab
+
+python scrape-lookup.py
+
+deactivate
